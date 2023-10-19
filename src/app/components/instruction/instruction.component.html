@@ -1,0 +1,81 @@
+<div class="container" >
+    <section class="mx-auto py-5" style="max-width: 100rem;">
+      
+      <div class="card">
+        <div class="card-body">
+          <blockquote class="blockquote blockquote-custom bg-white px-3 pt-4"> 
+            <h3>Information About the Project:</h3>
+            <div class="blockquote-custom-icon bg-info shadow-1-strong">
+              <i class="fa fa-quote-left text-white"></i> 
+            </div>
+            <footer class=" pt-4 mt-4 border-top">
+            </footer>
+            
+            <div class="container">
+              <div class="row">
+                <div class="mb-0 mt-2 font-italic col-6 ">
+                  <span class="h5">Technology Used:</span>
+                  <ul>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Bootstrap V-5.3</li>
+                    <li>Angular Framework V-16</li>
+                  </ul>
+                </div>
+
+                <div class="col-6">
+                  <h5>Components Created:</h5>
+                  <ul>
+                    <li>RegisterNote :</li>
+                      It Contains the following files: 
+                        <ul>
+                          <li>...component.html</li>
+                          <li>>...component.css</li>
+                          <li>>...component.ts</li>
+                        </ul>
+                    
+                    <li>Models (Interface):</li>
+                      It Contains a file which has a Information type to get from the user :
+                      <ul>
+                        <li>id</li>
+                        <li>name</li>
+                        <li>Phone Number </li>
+                        <li>Email</li>
+                      </ul>
+                      we have defined these type in this file.
+                  </ul>
+                </div>
+
+                <div class=" pt-4 mt-4 border-top"></div>
+
+                <div>
+                  <h5>Description of Components and Models:</h5>
+                  <p>The Register component is used for registering person Details by users. </p>
+                  <ul>
+                    <li>In register.component.html :</li>
+                      we build the ui for the project using the technology mentioned above.
+                    <li>In register.component.css :</li>
+                      In this component, we are styling the html component to look pretty.
+                    <li>In register.component.ts :</li>
+                      we get the input values from the user using ngModel(Two-way binding),
+                      after entering all the details of the user, the user has to click addDetails button to store and show it to the user.
+                      we are storing the details in the array, which can also be stored in the localstorage and get it from the localstorage to show the details.
+                      we will loop through the array variable to show the person details separately , and to that details , we added two buttons:
+                      <ol>
+                        <li>Edit :</li> when user wants to edit a particular person details , then they have to click the edit button and the respected details should populate in the 
+                          respective input fields and changed the text button to update. and when it is clicked, the details should be updated. all this operation will be done using the specific id of the person details.  
+                        <li>Delete :</li> this is to delete the person detail from the list. to delete , i used filter method and compared with the existing details.
+                      </ol>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+          </blockquote>
+
+          <button class="btn btn-outline-success" routerLink="../register" (click)="continue()">Continue  to the Project</button>
+        </div>
+      </div>
+      
+    </section>
+  </div>
